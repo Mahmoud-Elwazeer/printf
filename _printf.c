@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 						break;
 					case 'd':
 					case 'i':
-						print_int(va_arg(args, int));
+						size += print_int(va_arg(args, int));
 						break;
 					default:
 						break;
