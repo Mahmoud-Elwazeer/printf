@@ -13,7 +13,6 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	va_start(args, format);
-	size = _strlen((char *)format);
 
 	for (i = 0; *(format + i) != '\0'; i++)
 	{
