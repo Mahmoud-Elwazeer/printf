@@ -59,7 +59,7 @@ int _printf(const char *format, ...)
 				break;
 		}
 	}
-
+	_putchar('\n');
 	va_end(args);
 
 	return (size);
