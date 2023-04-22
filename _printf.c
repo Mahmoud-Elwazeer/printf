@@ -31,6 +31,10 @@ int _printf(const char *format, ...)
 					case 's':
 						size += _puts(va_arg(args, char *));
 						break;
+					case '%':
+						size++;
+						_putchar('%');
+						break;
 					case 'd':
 					case 'i':
 						size += print_int(va_arg(args, int));
