@@ -60,7 +60,6 @@ int _printf(const char *format, ...)
 		}
 	}
 
-	_putchar('\n');
 	va_end(args);
 
 	return (size);
