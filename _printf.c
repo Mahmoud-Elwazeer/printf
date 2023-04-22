@@ -8,14 +8,14 @@
  */
 int _printf(const char *format, ...)
 {
-	int size, i;
+	int size = 0, i;
 	char ch;
 	va_list args;
 
 	va_start(args, format);
 	size = _strlen((char *)format);
 
-	for (i = 0; i < size; i++)
+	for (i = 0; *(format + i) != '\0'; i++)
 	{
 		ch = *(format + i);
 		switch (ch)
@@ -26,10 +26,11 @@ int _printf(const char *format, ...)
 				switch (ch)
 				{
 					case 'c':
+						size++;
 						_putchar(va_arg(args, int));
 						break;
 					case 's':
-						_puts(va_arg(args, char *));
+						size += _puts(va_arg(args, char *));
 						break;
 					case 'd':
 					case 'i':
@@ -42,6 +43,7 @@ int _printf(const char *format, ...)
 			case '\\':
 				i++;
 				ch = *(format + i);
+				size++;
 				switch (ch)
 				{
 					case 'n':
@@ -52,11 +54,13 @@ int _printf(const char *format, ...)
 				}
 				break;
 			default:
+				size++;
 				_putchar(ch);
 				break;
 		}
 	}
 
+	_putchar('\n');
 	va_end(args);
 
 	return (size);

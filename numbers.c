@@ -9,6 +9,8 @@ int calc_digit(int n)
 {
 	int count = 0;
 
+	if (n == 0)
+		return (1);	
 	while (n > 0)
 	{
 		n /= 10;
@@ -37,21 +39,25 @@ int _pow(int n, int p)
 /**
  * print_int - print integers number
  * @n: number to print
- * Return: void
+ * Return: number of digits
  */
-void print_int(int n)
+int print_int(int n)
 {
-	int len, digit;
+	int len, digit, size = 0;
 
 	if (n == 0)
+	{
 		_putchar('0');
+	}
 	else if (n < 0)
 	{
 		n = -n;
 		_putchar('-');
+		size++;
 	}
 
 	len = calc_digit(n);
+	size += len;
 
 	while (n > 0)
 	{
@@ -59,4 +65,5 @@ void print_int(int n)
 		n -= (long)digit * _pow(10, len);
 		_putchar(digit + '0');
 	}
+	return (size);
 }

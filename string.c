@@ -14,10 +14,16 @@ int _strlen(char *s)
 	return (len);
 }
 
-void _puts(char *s)
+/**
+ * _puts - print string
+ * @s: pointer to string
+ * Return: Number of string
+ */
+int _puts(char *s)
 {
 	int i;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 		_putchar(*(s + i));
+	return (i);
 }
