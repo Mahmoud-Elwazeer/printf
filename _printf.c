@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 						size += print_int(va_arg(args, int));
 						break;
 					case 'b':
-						size += binary_number(va_arg(args, unsigned int));
+						size += binary(va_arg(args, unsigned int));
 						break;
 					default:
 						break;
