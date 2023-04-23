@@ -16,8 +16,8 @@ int main(void)
 
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
-	len3 = _printf("%d\n", INT_MIN);
-	len4 = printf("%d\n", INT_MIN);
+	len3 = _printf("%d\n", 2147483647);
+	len4 = printf("%d\n", 2147483647);
 	printf("len: %d\n", len3);
 	printf("len: %d\n", len4);
 	len5 = _printf(NULL);

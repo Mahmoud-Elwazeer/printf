@@ -68,3 +68,16 @@ int print_int(int n)
 	}
 	return (size);
 }
+
+/**
+ * binary_number - convert decimal to binary
+ * @n: num
+ * Return: void
+ */
+void binary_number(unsigned int n)
+{
+	if (n == 0)
+		return;
+	binary_number(n / 2);
+	_putchar(n % 2 + '0');
+}

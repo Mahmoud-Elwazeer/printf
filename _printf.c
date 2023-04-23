@@ -40,6 +40,9 @@ int _printf(const char *format, ...)
 					case 'i':
 						size += print_int(va_arg(args, int));
 						break;
+					case 'b':
+						binary_number(va_arg(args, int));
+						break;
 					default:
 						break;
 				}
