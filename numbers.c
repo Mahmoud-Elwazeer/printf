@@ -5,7 +5,7 @@
  * @n: Number
  * Return: Number of digit
  */
-int calc_digit(int n)
+int calc_digit(unsigned int n)
 {
 	int count = 0;
 
@@ -44,6 +44,7 @@ int _pow(int n, int p)
 int print_int(int n)
 {
 	int len, digit, size = 0;
+	unsigned int num = n;
 
 	if (n == 0)
 	{
@@ -51,18 +52,18 @@ int print_int(int n)
 	}
 	else if (n < 0)
 	{
-		n = -n;
+		num = (long)n * (-1);
 		_putchar('-');
 		size++;
 	}
 
-	len = calc_digit(n);
+	len = calc_digit(num);
 	size += len;
 
-	while (n > 0)
+	while (num > 0)
 	{
-		digit = n / _pow(10, --len);
-		n -= (long)digit * _pow(10, len);
+		digit = num / _pow(10, --len);
+		num -= (long)digit * (long)_pow(10, len);
 		_putchar(digit + '0');
 	}
 	return (size);
