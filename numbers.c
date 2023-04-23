@@ -87,3 +87,36 @@ int binary_number(unsigned int n)
 
 	return (size);
 }
+
+/**
+ * binary - convert decimal to number
+ * @n: num
+ * Return: Number of binary
+ */
+int binary(unsigned int n)
+{
+	int *ben;
+	int len = 0, i = 0, j = 0;
+
+	if (n == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+	else
+	{
+		ben = (int *)malloc(32 * sizeof(int));
+		while (n > 0)
+		{
+			*(ben + i) = n % 2;
+			n /= 2;
+			i++;
+		}
+		len = i;
+		for (j = i - 1; j >= 0; j--)
+			_putchar(*(ben + j) + '0');
+
+		free(ben);
+	}
+	return (len);
+}
