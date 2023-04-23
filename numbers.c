@@ -52,11 +52,8 @@ int print_int(int n)
 	}
 	else if (n < 0)
 	{
-<<<<<<< HEAD
 		n *= -1;
-=======
 		num = (long)n * (-1);
->>>>>>> 8116a276714c6055b41fe5f23863445a0032f271
 		_putchar('-');
 		size++;
 	}
