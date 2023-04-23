@@ -11,6 +11,7 @@ int _puts(char *s);
 int calc_digit(unsigned int n);
 int _pow(int n, int p);
 int print_int(int n);
+int print_uint(unsigned int n);
 int binary_number(unsigned int n);
 int binary(unsigned int n);
 
