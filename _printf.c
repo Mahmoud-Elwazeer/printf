@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
-#include <stdlib.h>
 
 /**
  * _printf - write output to stdout, the standard output stream
@@ -41,6 +39,9 @@ int _printf(const char *format, ...)
 					case 'd':
 					case 'i':
 						size += print_int(va_arg(args, int));
+						break;
+					case 'b':
+						size += binary_number(va_arg(args, unsigned int));
 						break;
 					default:
 						break;

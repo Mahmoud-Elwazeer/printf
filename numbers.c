@@ -5,12 +5,12 @@
  * @n: Number
  * Return: Number of digit
  */
-int calc_digit(int n)
+int calc_digit(unsigned int n)
 {
 	int count = 0;
 
 	if (n == 0)
-		return (1);	
+		return (1);
 	while (n > 0)
 	{
 		n /= 10;
@@ -44,6 +44,7 @@ int _pow(int n, int p)
 int print_int(int n)
 {
 	int len, digit, size = 0;
+	unsigned int num = n;
 
 	if (n == 0)
 	{
@@ -51,19 +52,41 @@ int print_int(int n)
 	}
 	else if (n < 0)
 	{
+<<<<<<< HEAD
 		n *= -1;
+=======
+		num = (long)n * (-1);
+>>>>>>> 8116a276714c6055b41fe5f23863445a0032f271
 		_putchar('-');
 		size++;
 	}
 
-	len = calc_digit(n);
+	len = calc_digit(num);
 	size += len;
 
-	while (n > 0)
+	while (num > 0)
 	{
-		digit = n / _pow(10, --len);
-		n -= (long)digit * _pow(10, len);
+		digit = num / _pow(10, --len);
+		num -= (long)digit * (long)_pow(10, len);
 		_putchar(digit + '0');
 	}
+	return (size);
+}
+
+/**
+ * binary_number - convert decimal to binary
+ * @n: num
+ * Return: number of binary
+ */
+int binary_number(unsigned int n)
+{
+	static int size = 0;
+
+	if (n == 0)
+		return (0);
+	binary_number(n / 2);
+	_putchar(n % 2 + '0');
+	size++;
+
 	return (size);
 }
