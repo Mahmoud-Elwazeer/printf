@@ -74,10 +74,14 @@ int print_int(int n)
  * @n: num
  * Return: void
  */
-void binary_number(unsigned int n)
+int binary_number(unsigned int n)
 {
+	static int size = 0;
 	if (n == 0)
-		return;
+		return (0);
 	binary_number(n / 2);
 	_putchar(n % 2 + '0');
+	size++;
+
+	return (size);
 }
