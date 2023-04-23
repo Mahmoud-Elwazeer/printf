@@ -14,25 +14,24 @@ int _strlen(char *s)
 	return (len);
 }
 
+
 /**
  * _puts - print string
  * @s: pointer to string
  * Return: Number of string
  */
+
 int _puts(char *s)
 {
 	int i;
 
 	if (s == NULL)
-	{
 		s = "(null)";
-		for (i = 0; *(s + i) != '\0'; i++)
-			_putchar(*(s + i));
-	}
-	else
+
+	while (s[i])
 	{
-		for (i = 0; *(s + i) != '\0'; i++)
-			_putchar(*(s + i));
+		_putchar(*(s + i));
+		i++;
 	}
 	return (i);
 }
