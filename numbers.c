@@ -76,7 +76,7 @@ int print_int(int n)
  */
 int binary_number(unsigned int n)
 {
-	static int size;
+	static int size = 0;
 
 	if (n == 0)
 		return (0);
