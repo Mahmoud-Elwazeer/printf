@@ -26,12 +26,15 @@ int _puts(char *s)
 	int i;
 
 	if (s == NULL)
-		s = "(null)";
-
-	while (s[i])
 	{
-		_putchar(*(s + i));
-		i++;
+		s = "(null)";
+		for (i = 0; *(s + i) != '\0'; i++)
+			_putchar(*(s + i));
+	}
+	else
+	{
+		for (i = 0; *(s + i) != '\0'; i++)
+			_putchar(*(s + i));
 	}
 	return (i);
 }
