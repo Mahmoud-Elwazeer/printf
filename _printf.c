@@ -55,6 +55,9 @@ int _printf(const char *format, ...)
 					case 'n':
 						_putchar('\n');
 						break;
+					case 't':
+						_putchar('\t');
+						break;
 					default:
 						break;
 				}
