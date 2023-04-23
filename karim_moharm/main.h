@@ -7,8 +7,7 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int (*check_specifier(char *format))(va_list);
-int print_char(va_list); /**/
-int print_mod(va_list); /**/
+int print_char(va_list);
 int print_str(va_list); /**/
 
 

@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 				{
 					case 'c':
 						size++;
-						_putchar(va_arg(args, int));
+						_putchar(char)((va_arg(args, int)));
 						break;
 					case 's':
 						size += _puts(va_arg(args, char *));
@@ -54,6 +54,9 @@ int _printf(const char *format, ...)
 				{
 					case 'n':
 						_putchar('\n');
+						break;
+					case 't':
+						_putchar('\t');
 						break;
 					default:
 						break;
