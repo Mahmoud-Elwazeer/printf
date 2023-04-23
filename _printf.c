@@ -3,7 +3,7 @@
 
 /**
  * _printf - write output to stdout, the standard output stream
- * @format - pointer to all string
+ * @format: pointer to all string
  * Return: the number of characters printed
  */
 int _printf(const char *format, ...)
