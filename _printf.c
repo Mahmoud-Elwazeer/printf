@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stdlib.h>
 
 /**
  * _printf - write output to stdout, the standard output stream
@@ -12,6 +13,8 @@ int _printf(const char *format, ...)
 	char ch;
 	va_list args;
 
+	if (format == NULL)
+		return (-1);
 	va_start(args, format);
 
 	for (i = 0; *(format + i) != '\0'; i++)
