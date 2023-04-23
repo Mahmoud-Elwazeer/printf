@@ -103,7 +103,7 @@ int binary(unsigned int n)
 		_putchar('0');
 		return (1);
 	}
-	else if (n > 0)
+	else
 	{
 		ben = (int *)malloc(32 * sizeof(int));
 		while (n > 0)
