@@ -3,12 +3,14 @@
 
 #include <stdio.h>
 #include <stdarg.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int (*check_specifier(char *format))(va_list);
+int (*check_specifier(const char *))(va_list);
 int print_char(va_list);
-int print_str(va_list); /**/
+int print_str(va_list);
 
 
 /**

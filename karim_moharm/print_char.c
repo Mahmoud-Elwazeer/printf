@@ -3,15 +3,18 @@
 /**
   * print_char - print char
   * @c: char ot print
-  * Return: 0 if success
+  * Return: number of char printed and -1 if failed
   */
 
 int print_char (va_list c)
 {
-	char ch = va_arg(c, char);
+	char ch = va_arg(c, int);
+	int count_char = 0;
+
 	if (ch)
 	{
-		_putchar(ch);
-		return (0);
+		count_char = _putchar(ch);
+		return (count_char);
 	}
+	return (0); 
 }

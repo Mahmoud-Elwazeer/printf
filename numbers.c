@@ -52,6 +52,7 @@ int print_int(int n)
 	}
 	else if (n < 0)
 	{
+		n *= -1;
 		num = (long)n * (-1);
 		_putchar('-');
 		size++;
