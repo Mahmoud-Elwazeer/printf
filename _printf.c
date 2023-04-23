@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 				{
 					case 'c':
 						size++;
-						_putchar(char)((va_arg(args, int)));
+						_putchar((char)((va_arg(args, int))));
 						break;
 					case 's':
 						size += _puts(va_arg(args, char *));
