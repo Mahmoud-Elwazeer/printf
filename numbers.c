@@ -72,7 +72,7 @@ int print_int(int n)
 /**
  * binary_number - convert decimal to binary
  * @n: num
- * Return: void
+ * Return: number of binary
  */
 int binary_number(unsigned int n)
 {
