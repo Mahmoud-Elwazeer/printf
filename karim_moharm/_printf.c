@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdarg.h>
 
 /**
   * _printf - printf function
@@ -10,14 +8,13 @@
 
 int _printf(const char *format, ...)
 {
-	int arg_num = 0;
 	va_list pa;
-	int i = 0;
+	int i = 0, arg_num = 0;
+	int (*fun_ptr)(va_list) = NULL;
 
 	va_start(pa, format);
 	if (format == NULL)
 		return (-1);
-
 	while (format[i])
 	{
 		if (format[i] != '%')
@@ -38,12 +35,18 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
+				fun_ptr = check_specifier(&format[i + 1]);
 
+				if (fun_ptr != NULL)
+				{
+					i += 2;
+					arg_num += fun_ptr(pa);
+					continue;
+				}
 
 			}
-
 		}
 	}
+	va_end(pa);
 	return (arg_num);
-
 }
