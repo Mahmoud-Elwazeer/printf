@@ -21,7 +21,7 @@ int put_S(char *S)
 			_putchar('\\');
 			_putchar('X');
 			char_num += 2;
-			char_num += print_HEX(S);
+			char_num += print_HEX((char)S);
 		}
 		else
 		{
