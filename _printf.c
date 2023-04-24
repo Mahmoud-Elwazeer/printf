@@ -58,6 +58,9 @@ int _printf(const char *format, ...)
 					case 'x':
 						size += print_hex(va_arg(args, unsigned int));
 						break;
+					case 'S':
+						size += put_S(va_arg(args, char*));
+						break;
 					default:
 						break;
 				}
