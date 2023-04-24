@@ -68,8 +68,6 @@ int print_str_rev(char *s)
 {
 	int len = 0, i;
 
-	if (s == NULL)
-		s = "(null)";
 	while (*(s + len))
 		len++;
 
@@ -77,7 +75,7 @@ int print_str_rev(char *s)
 	while (i >= 0)
 	{
 		_putchar(*(s + i));
-		i++;
+		i--;
 	}
 	return (len);
 }
