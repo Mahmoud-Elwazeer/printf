@@ -46,6 +46,8 @@ int _puts(char *s)
  */
 void reverse_string(char *s)
 {
+	int i;
+
 	if (*s != '\0')
 	{
 		reverse_string(s + 1);
@@ -67,7 +69,7 @@ void reverse_string(char *s)
 
 int print_str_rev(char *s)
 {
-	int len = 0;
+	int len = 0, i;
 
 	if (s == NULL)
 		s = "(null)";
