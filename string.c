@@ -38,3 +38,17 @@ int _puts(char *s)
 	}
 	return (i);
 }
+
+/**
+ * reverse_string - reverse string
+ * @s: pointer to string
+ * Return: number of string reverse
+ */
+void reverse_string(char *s)
+{
+	if (*s == '\0')
+		return;
+
+	reverse_string(s + 1);
+	_putchar(*s);
+}
