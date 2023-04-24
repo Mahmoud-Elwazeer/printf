@@ -47,8 +47,7 @@ int _printf(const char *format, ...)
 						size += binary(va_arg(args, unsigned int));
 						break;
 					case 'r':
-						size += _strlen(va_arg(args, char *));
-						reverse_string(va_arg(args, char *));
+						size += reverse_string(va_arg(args, char *));
 						break;
 					case 'o':
 						size += print_octal(va_arg(args, unsigned int));

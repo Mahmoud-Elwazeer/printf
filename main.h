@@ -8,7 +8,9 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int _strlen(char *s);
 int _puts(char *s);
-void reverse_string(char *s);
+int reverse_string(char *s);
+int print_str_rev(char *s);
+
 int calc_digit(unsigned int n);
 int _pow(int n, int p);
 int print_int(int n);
@@ -17,4 +19,5 @@ int binary(unsigned int n);
 int print_octal(unsigned int n);
 int print_HEX(unsigned int n);
 int print_hex(unsigned int n);
+
 #endif
