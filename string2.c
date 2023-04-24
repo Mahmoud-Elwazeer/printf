@@ -18,12 +18,12 @@ int put_S(char *S)
 
 	while (*(S + i))
 	{
-		if ((*(S + i) < 32) || (*(S + i) >= 127))
+		if (((* S + i) > 0 && (*(S + i) < 32)) || (*(S + i) >= 127))
 		{
 			_putchar('\\');
 			_putchar('X');
 			char_num += 2;
-			char_num += print_HEX(S[i]);
+			char_num += print_HEX(*(S + i));
 		}
 		else
 		{
