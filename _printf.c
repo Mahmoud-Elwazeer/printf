@@ -58,6 +58,8 @@ int _printf(const char *format, ...)
 					case 'x':
 						size += print_hex(va_arg(args, unsigned int));
 						break;
+					case 'R':
+						size += print_str_rot13(va_arg(args, char *));
 					default:
 						break;
 				}
