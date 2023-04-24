@@ -61,9 +61,6 @@ int _printf(const char *format, ...)
 					case 'R':
 						size += print_str_rot13(va_arg(args, char *));
 						break;
-					case 'S':
-						size += put_S(va_arg(args, char*));
-						break;
 					default:
 						break;
 				}
