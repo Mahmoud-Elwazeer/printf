@@ -22,6 +22,9 @@ int put_S(char *S)
 			_putchar('\\');
 			_putchar('X');
 			char_num += 2;
+			if (*(S + i) < 16)
+				_putchar(48);
+
 			char_num += print_HEX(*(S + i));
 		}
 		else
