@@ -22,5 +22,5 @@ int print_octal(unsigned int n)
 	for (i = j -1; i >= 0; i--)
 		counter += _putchar(octal[i]);
 
-	return (counter - 1);
+	return (counter);
 }
