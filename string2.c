@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
-  * put_s - function print string and non printable print it 
+  * put_S - function print string and non printable print it
   * as ASCII in HEX
   * @S: string
   * Return: number of char in string
@@ -18,7 +17,7 @@ int put_S(char *S)
 
 	while (*(S + i))
 	{
-		if (((* S + i) > 0 && (*(S + i) < 32)) || (*(S + i) >= 127))
+		if (((*(S + i) > 0) && (*(S + i) < 32)) || (*(S + i) >= 127))
 		{
 			_putchar('\\');
 			_putchar('X');
@@ -28,7 +27,7 @@ int put_S(char *S)
 		else
 		{
 			_putchar(*(S + i));
-			char_num ++;
+			char_num++;
 		}
 		i++;
 	}
