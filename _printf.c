@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
 						break;
 					case 'r':
 						size += _strlen(va_arg(args, char *));
-						reverse_string(va_arg(srgs, char *));
+						reverse_string(va_arg(args, char *));
 						break;
 					default:
 						break;
