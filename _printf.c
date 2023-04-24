@@ -45,8 +45,8 @@ int _printf(const char *format, ...)
 						size += binary(va_arg(args, unsigned int));
 						break;
 					case 'r':
-						size++;
-						_putchar('r');
+						size += _strlen(va_arg(args, char *));
+						reverse_string(va_arg(args, char*));
 						break;
 					default:
 						break;
