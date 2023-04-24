@@ -49,7 +49,8 @@ int _printf(const char *format, ...)
 						reverse_string(va_arg(args, char *));
 						break;
 					case 'o':
-						size += print_oc
+						size += print_octal(va_arg(args, unsigned int));
+						break;
 					default:
 						break;
 				}

@@ -59,7 +59,3 @@ void reverse_string(char *s)
   * number of char in string
   */
 
-int print_str_rev(char *s)
-{
-
-}
