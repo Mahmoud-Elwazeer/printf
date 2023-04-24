@@ -19,11 +19,56 @@ int print_octal(unsigned int n)
 		n /= 8;
 	}
 
-	for (i = j -1; i >= 0; i--)
+	for (i = j - 1; i >= 0; i--)
 		counter += _putchar(octal[i]);
 
 	return (counter);
 }
+
+
+/**
+  * print_HEX - convert decimal to uppercase HEX
+  * @n: decimal number
+  * Return: the number of digit printed
+  */
+
+int print_HEX(unsigned int n)
+{
+	int rem, i = 0, j, count = 0;
+	int *hex = NULL;
+
+	hex = (int *)malloc(40 * sizeof(int));
+
+	if (hex != NULL)
+	{
+		while (n != 0)
+		{
+			rem = n % 16;
+			if (rem < 10)
+			{
+				hex[i] = 48 + rem;
+				i++;
+			}
+			else
+			{
+				hex[i] = 55 + rem;
+				i++;
+			}
+
+			n /= 16;
+		}
+
+		for (j = i - 1; j >= 0; j--)
+			count += _putchar(hex[j]);
+
+		free(hex);
+		return (count);
+	}
+	else
+		return (-1);
+}
+
+
 
 
 /**
@@ -32,5 +77,33 @@ int print_octal(unsigned int n)
   * Return: the number of digit printed
   */
 
+int print_hex(unsigned int n)
+{
+	int rem, i = 0, j, count = 0;
 
+	int *hex = NULL;
 
+	hex = (int *)malloc(40 * sizeof(int));
+
+	if (hex != NULL)
+	{
+		while (n != 0)
+		{
+			rem = n % 16;
+			if (rem < 10)
+				hex[i++] = 48 + rem;
+			else
+				hex[i++] = 87 + rem;
+
+			n /= 16;
+		}
+
+		for (j = i - 1; j >= 0; j--)
+			count += _putchar(hex[j]);
+
+		free(hex);
+		return (count);
+	}
+	else
+		return (-1);
+}

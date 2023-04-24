@@ -15,5 +15,6 @@ int print_int(int n);
 int binary_number(unsigned int n);
 int binary(unsigned int n);
 int print_octal(unsigned int n);
-
+int print_HEX(unsigned int n);
+int print_hex(unsigned int n);
 #endif
