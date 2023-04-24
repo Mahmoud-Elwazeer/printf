@@ -38,8 +38,10 @@ int _printf(const char *format, ...)
 						break;
 					case 'd':
 					case 'i':
-					case 'u':
 						size += print_int(va_arg(args, int));
+						break;
+					case 'u':
+						size += print_int(va_arg(args, unsigned int));
 						break;
 					case 'b':
 						size += binary(va_arg(args, unsigned int));

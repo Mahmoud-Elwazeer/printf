@@ -24,3 +24,13 @@ int print_octal(unsigned int n)
 
 	return (counter);
 }
+
+
+/**
+  * print_hex - convert dec to lowercase hex
+  * @n: decimal number
+  * Return: the number of digit printed
+  */
+
+
+
