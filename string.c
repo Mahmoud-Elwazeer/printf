@@ -79,3 +79,24 @@ int print_str_rev(char *s)
 	}
 	return (len);
 }
+
+/**
+ * print_str_rot13 - prints the rot13'ed string
+ * @s: pointer to string
+ * Return: Number to print
+ */
+int print_str_rot13(char *s)
+{
+	int len;
+	char ch;
+
+	for (len = 0; *(s + len) != '\0'; len++)
+	{
+		ch = *(s + len);
+		if ((ch >= 'A' && ch <= 'M') || (ch >= 'a' && ch <= 'm'))
+			_putchar(ch + ('N' - 'A'));
+		else if ((ch >= 'N' && ch <= 'Z') || (ch >= 'n' && ch <= 'z'))
+			_putchar(ch + ('A' - 'N'));
+	}
+	return (len);
+}

@@ -10,6 +10,7 @@ int _strlen(char *s);
 int _puts(char *s);
 int reverse_string(char *s);
 int print_str_rev(char *s);
+int print_str_rot13(char *s);
 
 int calc_digit(unsigned int n);
 int _pow(int n, int p);
