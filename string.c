@@ -52,3 +52,14 @@ void reverse_string(char *s)
 	reverse_string(s + 1);
 	_putchar(*s);
 }
+
+/**
+  * print_str_rev - reverse string
+  * @s2 - string
+  * number of char in string
+  */
+
+int print_str_rev(char *s)
+{
+
+}
