@@ -46,11 +46,17 @@ int _puts(char *s)
  */
 void reverse_string(char *s)
 {
-	if (*s == '\0')
-		return;
-
-	reverse_string(s + 1);
-	_putchar(*s);
+	if (*s != '\0')
+	{
+		reverse_string(s + 1);
+		_putchar(*s);
+	}
+	else
+	{
+		s = "(null)";
+		for (i = 5; s[i] >= 0; i--)
+			_putchar(s[i]);
+	}
 }
 
 /**
