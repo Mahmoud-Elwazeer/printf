@@ -107,3 +107,19 @@ int print_hex(unsigned int n)
 	else
 		return (-1);
 }
+
+/**
+ * print_0x_hex - print 0x+hex Number
+ * @n: number
+ * Retunr: number printed
+ */
+int print_0x_hex(unsigned int n)
+{
+	int x;
+
+	_putchar('0');
+	_putchar('x');
+	x = print_hex(n);
+
+	return (x);
+}
