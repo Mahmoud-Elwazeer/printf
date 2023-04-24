@@ -40,3 +40,48 @@ int put_S(char *S)
 	}
 	return (char_num);
 }
+
+
+
+/**
+ * put_S2 - convert to special chars
+ * @S2: string
+ * Return: int
+ */
+
+int put_S2(char *S2)
+{
+	int i, len = 0;
+	char *null = "(null)";
+
+	if (S2 == NULL)
+	{
+		for (i = 0; null[i]; i++)
+		_putchar(null[i]);
+		return (i);
+	}
+
+	for (i = 0; S2[i] != '\0'; i++)
+	{
+		if (S2[i] < 32 || S2[i] >= 127)
+		{
+			_putchar('\\');
+			_putchar('X');
+			len = len + 2;
+
+			if (S2[i] < 16)
+			{
+				_putchar(48);
+				len++;
+			}
+
+			len += print_HEX(S2[i]);
+		}
+		else
+		{
+			_putchar(S2[i]);
+			len++;
+		}
+	}
+	return (len);
+}

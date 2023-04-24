@@ -3,6 +3,7 @@
 
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 int _printf(const char *format, ...);
@@ -21,4 +22,5 @@ int print_octal(unsigned int n);
 int print_HEX(unsigned int n);
 int print_hex(unsigned int n);
 int put_S(char *S);
+int put_S2(char *S2);
 #endif
