@@ -6,6 +6,7 @@
   * @S: string
   * Return: number of char in string
   */
+/*
 int put_S(char *S)
 {
 	int i = 0;
@@ -32,3 +33,4 @@ int put_S(char *S)
 	}
 	return (char_num);
 }
+*/
