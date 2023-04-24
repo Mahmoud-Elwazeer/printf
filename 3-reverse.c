@@ -7,7 +7,9 @@
  */
 int main(void)
 {
-	printf("%r", "ali");
+	int len = _printf("%r\n", "Mahmoud");
+
+	_printf("len: %d\n", len);
 
 	return (0);
 }
