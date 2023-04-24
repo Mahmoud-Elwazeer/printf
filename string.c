@@ -58,4 +58,20 @@ void reverse_string(char *s)
   * @s2 - string
   * number of char in string
   */
+int print_str_rev (char *s)
+{
+	int len = 0;
 
+	if (s == NULL)
+		s = "(null)";
+	while (*(s + len))
+		len++;
+
+	i = len - 1;
+	while (i >= 0)
+	{
+		_putchar(*(s + i));
+		i++;
+	}
+	return(len);
+}
