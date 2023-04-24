@@ -48,6 +48,8 @@ int _printf(const char *format, ...)
 						size += _strlen(va_arg(args, char *));
 						reverse_string(va_arg(args, char *));
 						break;
+					case 'o':
+						size += print_oc
 					default:
 						break;
 				}
