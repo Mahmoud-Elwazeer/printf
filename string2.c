@@ -66,7 +66,7 @@ int put_S2(char *S2)
 		if (S2[i] < 32 || S2[i] >= 127)
 		{
 			_putchar('\\');
-			_putchar('X');
+			_putchar('x');
 			len = len + 2;
 
 			if (S2[i] < 16)
