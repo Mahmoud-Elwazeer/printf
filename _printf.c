@@ -62,7 +62,7 @@ int _printf(const char *format, ...)
 						size += print_str_rot13(va_arg(args, char *));
 						break;
 					case 'S':
-						size += put_S2(va_arg(args, char*));
+						size += put_S2(va_arg(args, char *));
 						break;
 					case 'p':
 						size += print_0x_hex(va_arg(args, unsigned int));

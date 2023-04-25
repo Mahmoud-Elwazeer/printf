@@ -121,5 +121,5 @@ int print_0x_hex(unsigned int n)
 	_putchar('x');
 	x = print_hex(n);
 
-	return (x);
+	return (x + 2);
 }
