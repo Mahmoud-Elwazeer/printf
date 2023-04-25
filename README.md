@@ -12,6 +12,6 @@ the function should return number of printed chars
 
 
 ### Authors
-    Mahmoud Elwazeer - [@GitHub](https://github.com/Mahmoud-Elwazeer)<br>
+   Mahmoud Elwazeer - [@GitHub](https://github.com/Mahmoud-Elwazeer)<br>
 
-    Karim Moharm - [@GitHub](https://github.com/Karim-Moharm)<br>
+   Karim Moharm - [@GitHub](https://github.com/Karim-Moharm)<br>
