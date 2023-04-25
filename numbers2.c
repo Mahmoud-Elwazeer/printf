@@ -117,11 +117,8 @@ int print_0x_hex(unsigned long n)
 {
 	int x;
 
-	if (n != NULL)
-	{
-		_putchar('0');
-		_putchar('x');
-		x = print_hex(n);
-	}
+	_putchar('0');
+	_putchar('x');
+	x = print_hex(n);
 	return (x + 2);
 }
