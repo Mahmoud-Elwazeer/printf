@@ -111,7 +111,7 @@ int print_hex(unsigned int n)
 /**
  * print_0x_hex - print 0x+hex Number
  * @n: number
- * Retunr: number printed
+ * Return: number printed
  */
 int print_0x_hex(void *n)
 {

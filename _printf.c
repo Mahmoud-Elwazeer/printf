@@ -65,13 +65,13 @@ int _printf(const char *format, ...)
 						size += put_S2(va_arg(args, char *));
 						break;
 					case 'p':
-						size += print_0x_hex(va_arg(args, void*));
+						size += print_0x_hex(va_arg(args, void *));
 						break;
 					case 'l':
 					case 'h':
 						i++;
 						ch = *(format + i);
-						switch(ch)
+						switch (ch)
 						{
 							case 'd':
 							case 'i':
