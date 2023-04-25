@@ -24,6 +24,6 @@ an implementation of the printf standard function using variadic function
 
 
 ### Authors
->   	Mahmoud Elwazeer - [GitHub](https://github.com/Mahmoud-Elwazeer)<br>
-
->   	Karim Moharm - [GitHub](https://github.com/Karim-Moharm)<br>
+>   Mahmoud Elwazeer - [GitHub](https://github.com/Mahmoud-Elwazeer)<br>
+>
+>   Karim Moharm - [GitHub](https://github.com/Karim-Moharm)<br>
