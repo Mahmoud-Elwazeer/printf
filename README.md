@@ -17,13 +17,13 @@ an implementation of the printf standard function using variadic function
 ### Resources
 ##### Read or watch:
 
-[Secrets of printf](https://www.academia.edu/10297206/Secrets_of_printf_) 
+   [Secrets of printf](https://www.academia.edu/10297206/Secrets_of_printf_) 
 
 ##### man or help:
-man 3 printf
+> man 3 printf
 
 
 ### Authors
-   Mahmoud Elwazeer - [GitHub](https://github.com/Mahmoud-Elwazeer)<br>
+>   Mahmoud Elwazeer - [GitHub](https://github.com/Mahmoud-Elwazeer)<br>
 
-   Karim Moharm - [GitHub](https://github.com/Karim-Moharm)<br>
+>   Karim Moharm - [GitHub](https://github.com/Karim-Moharm)<br>
