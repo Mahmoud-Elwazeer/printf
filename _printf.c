@@ -67,6 +67,28 @@ int _printf(const char *format, ...)
 					case 'p':
 						size += print_0x_hex(va_arg(args, unsigned int));
 						break;
+					case 'l':
+					case 'h':
+						i++;
+						ch = *(format + i);
+						switch(ch)
+						{
+							case 'd':
+							case 'i':
+							case 'u':
+								size += print_int(va_arg(args, unsigned int));
+								break;
+							case 'o':
+								size += print_octal(va_arg(args, unsigned int));
+								break;
+							case 'x':
+								size += print_hex(va_arg(args, unsigned int));
+								break;
+							case 'X':
+								size += print_HEX(va_arg(args, unsigned int));
+								break;
+						}
+					break;
 					default:
 						break;
 				}
