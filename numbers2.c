@@ -113,13 +113,13 @@ int print_hex(unsigned int n)
  * @n: number
  * Retunr: number printed
  */
-int print_0x_hex(unsigned int n)
+int print_0x_hex(void *n)
 {
 	int x;
 
 	_putchar('0');
 	_putchar('x');
-	x = print_hex(n);
+	x = print_hex(&n);
 
 	return (x + 2);
 }
