@@ -15,5 +15,8 @@ int main(void)
 	printf("len1 = %d\n", len1);
 	printf("len2 = %d\n", len2);
 
+	printf("hello\t\"world\"\n");
+	_printf("hello\t\"world\"\n");
+
 	return (0);
 }

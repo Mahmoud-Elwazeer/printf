@@ -105,6 +105,11 @@ int _printf(const char *format, ...)
 					case 't':
 						_putchar('\t');
 						break;
+					case 'v':
+						_putchar('\v');
+						break;
+					case '"':
+						_putchar('\"');
 					default:
 						break;
 				}
