@@ -121,7 +121,7 @@ int print_0x_hex(void *n)
 
 	if (n == NULL)
 	{
-		for (i = 0; i < 4; i++)
+		for (i = 0; *(null + i) != '\0'; i++)
 			_putchar(*(null + i));
 		return (i);
 	}
