@@ -113,12 +113,21 @@ int print_hex(unsigned int n)
  * @n: number
  * Return: number printed
  */
-int print_0x_hex(unsigned long n)
+int print_0x_hex(void *n)
 {
 	int x;
+	char *null = "(nil)";
+	int i;
+
+	if (n == NULL)
+	{
+		for (i = 0; i < 4; i++)
+			_putchar(*(null + i));
+		return (i);
+	}
 
 	_putchar('0');
 	_putchar('x');
-	x = print_hex(n);
+	x = print_hex((unsigned long int)n);
 	return (x + 2);
 }

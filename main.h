@@ -21,7 +21,7 @@ int binary(unsigned int n);
 int print_octal(unsigned int n);
 int print_HEX(unsigned int n);
 int print_hex(unsigned int n);
-int print_0x_hex(unsigned long n);
+int print_0x_hex(void *n);
 
 int put_S(char *S);
 int put_S2(char *S2);
