@@ -1,7 +1,9 @@
 ## printf
-Prototype
+---
 
-	int _printf(const char *format, ...)
+Function Prototype
+
+   int _printf(const char *format, ...)
 
 Return
 
