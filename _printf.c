@@ -90,6 +90,9 @@ int _printf(const char *format, ...)
 						}
 					break;
 					default:
+						size += 2;
+						_putchar(*(format + i - 1));
+						_putchar(ch);
 						break;
 				}
 				break;
