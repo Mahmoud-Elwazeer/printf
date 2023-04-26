@@ -22,6 +22,8 @@ int _printf(const char *format, ...)
 		{
 			case '%':
 				i++;
+				if (*(format + i) == NULL)
+					return (-1);
 				ch = *(format + i);
 				switch (ch)
 				{
