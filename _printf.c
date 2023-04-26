@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 		{
 			case '%':
 				i++;
-				if ((format + i) == NULL)
+				if (*(format + i) == '\0')
 					return (-1);
 				ch = *(format + i);
 				switch (ch)
