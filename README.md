@@ -1,5 +1,4 @@
 ## printf
-<<<<<<< HEAD
 * Thanks God we are finish this project
 =======
 ---
@@ -30,4 +29,3 @@ an implementation of the printf standard function using variadic function
 >   Mahmoud Elwazeer - [GitHub](https://github.com/Mahmoud-Elwazeer)<br>
 >
 >   Karim Moharm - [GitHub](https://github.com/Karim-Moharm)<br>
->>>>>>> 87d3a39f45c53d5fedf794eaa7c17bc7ae57ecbc
