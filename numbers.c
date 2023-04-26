@@ -61,7 +61,7 @@ int print_int(int n)
 	len = calc_digit(num);
 	size += len;
 
-	while (num > 0)
+	while (len > 0)
 	{
 		digit = num / _pow(10, --len);
 		num -= (long)digit * (long)_pow(10, len);
